@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+ul{
+    list-style: none;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -122,15 +126,42 @@ nav {
 nav ul.grid{
     gap: 4rem;
 }
-
 nav ul li{
     text-align: center;
 }
+
+nav ul li a{
+    transition: 0.2s;
+    position: relative
+}
+
+nav ul li a:hover {
+    color: var(--base-color);
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--base-color);
+
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+
+    transition: .2s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+
 
 nav .menu{
     opacity:0;
     visibility: hidden;
 }
+
+/*** QUANDO MOSTRAR O MENU ***/
 nav.show .menu{
     opacity: 1;
     visibility: visible;
@@ -144,8 +175,15 @@ nav.show .menu{
     top:0;
     left: 0;
 
+}
 
-    
+nav.show .menu{
+    display: grid;
+    place-content: center;
+}
+
+nav.show ul.grid{
+    gap: 4rem;
 
 }
 
