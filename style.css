@@ -93,7 +93,7 @@ body {
 
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0; 
     z-index: 100;
     background-color: var(--body-color);
     width: 100%;
@@ -122,16 +122,14 @@ nav {
     justify-content: space-between;
     width: 100%;
 }
-nav ul.grid{
-    gap: 4rem;
-}
+
 nav ul li{
     text-align: center;
 }
 
 nav ul li a{
-    transition: 0.2s;
-    position: relative
+    transition: color 0.2s;
+    position: relative;
 }
 
 nav ul li a:hover {
@@ -142,18 +140,17 @@ nav ul li a::after {
     content: '';
     width: 0%;
     height: 2px;
-    background-color: var(--base-color);
+    background: var(--base-color);
 
     position: absolute;
     left: 0;
     bottom: -1.5rem;
 
-    transition: .2s;
+    transition: width .2s;
 }
 nav ul li a:hover::after {
     width: 100%;
 }
-
 
 nav .menu{
     opacity:0;
@@ -187,7 +184,7 @@ nav.show ul.grid{
 
 /* TOGGLE MENU */
 .toggle{
-    color:var(--base-color);
+    color: var(--base-color);
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -253,3 +250,48 @@ nav.show div.icon-close{
 #home .text p {
     margin-bottom: 2rem;
 }
+
+
+/*** ABOUT ****/ 
+
+#about .container {
+    margin: 0;
+}
+
+#about .image {
+    position: relative;
+}
+
+#about .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -16.8%;
+    left: 16.7%;
+    z-index: 0;
+}
+
+#about .image img {
+    position: relative;
+    right: 2.93rem;
+}
+
+#about .image img,
+#about .image::before {
+    border-radius: 0.25rem;
+}
+
+#about .text {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    
+}
+
+/* parei em 1h27min*/
+
+
+
+
+
