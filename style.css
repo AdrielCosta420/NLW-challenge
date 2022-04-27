@@ -128,14 +128,14 @@ body {
     background-color: var(--body-color);
     width: 100%;
 }
-/* adicionei um scroll para mudar as cores do header ao rolar a tela*/
+/* adicionei um scroll para sombrear o header ao rolar a tela*/
 #header.scroll{
-    background: var(--base-color);
+    /*background: var(--base-color) caso eu queira aplicar cor no header*/
     box-shadow: 0 0 12px  rgba(0, 0, 0, 0.12);
 
 }
-
-#header.scroll .logo span {
+/* se aplicar cor no header ao rolar, aplicar esses style abaixo*/ 
+/*#header.scroll .logo span {
     color: white;
     transition: 0.2s;
 }
@@ -143,7 +143,7 @@ body {
 #header.scroll .icon-menu{
     color: white;
     transition: 0.2s;
-}
+} */ 
 
 main{
     margin-top: calc(var(--header-height) + 2rem);
@@ -380,3 +380,6 @@ nav.show div.icon-close{
     color: black;
     margin-bottom: 0.75rem;
 }
+
+/* TESTIMONIALS */ 
+
