@@ -32,7 +32,6 @@ window.addEventListener('scroll', function(){
 })
 
 /* Testimonials carousel slider swiper(carrosel de rolar os depoimentos)*/ 
-const swiper = new Swiper('.swiper', {
-}
+
 
     /* PAREI EM 42 MINUTOS*/
