@@ -21,6 +21,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
         rel="stylesheet" />
+
+        <!--SWIPER-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
 </head>
 <body>
     <!--estrutura semântica, deixar mais organizado-->
@@ -138,76 +142,85 @@
                 <header>
                     <h2 class="title">Depoimentos de quem já passou por aqui</h2>
                 </header>
-                <div class="testeminials">
-                    <div class="testimonials">
-                        <!--blockquote é usado geralmente quando se quer botar um comentário de outrem, nao exatamente voce, e sim um depoimento.-->
-                        <blockquote>
-                        <p>
-                            <span>&ldquo;</span>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Fugiat, repellendus. Quidem magni eligendi dignissimos perspiciatis delectus culpa laudantium officiis corporis,
-                            earum suscipit eveniet inventore,
-                            adipisci reiciendis odit, totam quos at.
-                            
-                        </p>
-                        <br>
-                        <!--cite é usado para fazer uma citação, um comentário de outrem-->
-                        <!--VIDEO PAUSADO EM 16 MINUTOS-->
-                        <cite>
-                            <img src="assets/fonts/00100sPORTRAIT_00100_BURST20220130122048041_COVER.jpg" alt="Adriel Costa"/>
-                            Adriel Costa
-                        </cite>
-                        <br>
-                    </blockquote>
-                    </div>
-                    
-                    <div class="testimonials">
-                        <!--blockquote é usado geralmente quando se quer botar um comentário de outrem, nao exatamente voce, e sim um depoimento.-->
-                        <blockquote>
-                        <p>
+                <div class="testimonials swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="testimonials swiper-slide">
+                            <!--blockquote é usado geralmente quando se quer botar um comentário de outrem, nao exatamente voce, e sim um depoimento.-->
+                            <blockquote>
+                            <p>
+                                <span>&ldquo;</span>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Fugiat, repellendus. Quidem magni eligendi dignissimos perspiciatis delectus culpa laudantium officiis corporis,
+                                earum suscipit eveniet inventore,
+                                adipisci reiciendis odit, totam quos at.
+                                
+                            </p>
                             <br>
-                            <span>&ldquo;</span>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Fugiat, repellendus. Quidem magni eligendi dignissimos perspiciatis delectus culpa laudantium officiis corporis,
-                            earum suscipit eveniet inventore,
-                            adipisci reiciendis odit, totam quos at.
+                            <!--cite é usado para fazer uma citação, um comentário de outrem-->
+                            <!--VIDEO PAUSADO EM 16 MINUTOS-->
+                            <cite>
+                                <img src="assets/fonts/00100sPORTRAIT_00100_BURST20220130122048041_COVER.jpg" alt="foto de Adriel Costa"/>
+                                Adriel Costa
+                            </cite>
+                            <br>
+                        </blockquote>
+                        </div>
+                        
+                        <div class="testimonials swiper-slide">
+                            <!--blockquote é usado geralmente quando se quer botar um comentário de outrem, nao exatamente voce, e sim um depoimento.-->
+                            <blockquote>
+                            <p>
+                                <span>&ldquo;</span>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Fugiat, repellendus. Quidem magni eligendi dignissimos perspiciatis delectus culpa laudantium officiis corporis,
+                                earum suscipit eveniet inventore,
+                                adipisci reiciendis odit, totam quos at.
+                                
+                            </p>
+                            <!--cite é usado para fazer uma citação, um comentário de outrem-->
+                            <cite>
+                                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="foto de Bruno Ribeiro"/>
+                                Bruno Ribeiro
+                            </cite>
+                        </blockquote>
+                        </div>
+    
+                        <div class="testimonials swiper-slide">
+                            <!--blockquote é usado geralmente quando se quer botar um comentário de outrem, nao exatamente voce, e sim um depoimento.-->
+                            <blockquote>
+                            <p>
+                                
+                                <span>&ldquo;</span>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Fugiat, repellendus. Quidem magni eligendi dignissimos perspiciatis delectus culpa laudantium officiis corporis,
+                                earum suscipit eveniet inventore,
+                                adipisci reiciendis odit, totam quos at.
+                                
+                            </p>
                             
-                        </p>
-                        <br>
-                        <!--cite é usado para fazer uma citação, um comentário de outrem-->
-                        <cite>
-                            <img src="" alt=""/>
-                            Bruno Ribeiro
-                        </cite>
-                    </blockquote>
+                            <!--cite é usado para fazer uma citação, um comentário de outrem-->
+                            <cite>
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="foto de Matheus Melgaço"/>
+                                Matheus Melgaço
+                            </cite>
+                        </blockquote>
+                        </div>
                     </div>
 
-                    <div class="testimonials">
-                        <!--blockquote é usado geralmente quando se quer botar um comentário de outrem, nao exatamente voce, e sim um depoimento.-->
-                        <blockquote>
-                        <p>
-                            <br>
-                            <span>&ldquo;</span>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                            Fugiat, repellendus. Quidem magni eligendi dignissimos perspiciatis delectus culpa laudantium officiis corporis,
-                            earum suscipit eveniet inventore,
-                            adipisci reiciendis odit, totam quos at.
-                            
-                        </p>
-                        <br>
-                        <!--cite é usado para fazer uma citação, um comentário de outrem-->
-                        <cite>
-                            <img src="" alt=""/>
-                            Matheus Melgaço
-                        </cite>
-                    </blockquote>
-                    </div>
+                    <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
 
         <!--CONTACT-->
     </main>
+
+    <!--Swiper-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- main.js -->
     <script src="main.js"></script>
 </body>
 
