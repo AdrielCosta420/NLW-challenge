@@ -55,4 +55,6 @@ scrollReveal.reveal(
     #services header, #services .card,
     #testimonials header, #testimonials .testimonials,
     #contact .text, #contact .links
-`, {interval: 100})
+`,
+{interval: 100}
+)

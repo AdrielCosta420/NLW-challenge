@@ -23,12 +23,9 @@ href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-        rel="stylesheet" />
-
-    
-
+        rel="stylesheet" 
+    />
 </head>
-
 <body>
     <!--estrutura semântica, deixar mais organizado-->
     <header id="header" class="scroll">
@@ -113,7 +110,7 @@ href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
                 <div class="cards grid">
                     <div class="card">
                         <i class="icon-woman-hair"></i>
-                        <h3 class="tittle">Terapia Capilar</h3>
+                        <h3 class="title">Terapia Capilar</h3>
                         <p> Na barbershop temos terapia capilar à base de produtos naturais, que serve tanto para o
                             cabelo,
                             como para sua barba, deixando-as mais saúdaveis e bonitas do que nunca.
@@ -121,7 +118,7 @@ href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
                     </div>
                     <div class="card">
                         <i class="icon-trim"></i>
-                        <h3 class="tittle">Cortes</h3>
+                        <h3 class="title">Cortes</h3>
                         <p>
                             Um dos nossos grandes diferenciais, são os cortes de cabelo e como é feito a modelagem da
                             barba,
@@ -131,7 +128,7 @@ href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
                     </div>
                     <div class="card">
                         <i class="icon-cosmetic"></i>
-                        <h3 class="tittle">Tratamentos</h3>
+                        <h3 class="title">Tratamentos</h3>
                         <p> O tratamento feito para cuidar do seu cabelo e da sua barba, conta com produtos naturais
                             para preservar a saúde do seu couro cabeludo, proporcionando resultados incríveis!
                         </p>
@@ -144,13 +141,13 @@ href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
         <!--TESTIMONIALS/DEPOIMENTOS-->
         <section class="section" id="testimonials">
-            <div class="container">
+            <div class="container swiper">
                 <header>
                     <h2 class="title">Depoimentos de quem já passou por aqui</h2>
                 </header>
                 <div class="testimonials swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="testimonials swiper-slide">
+                        <div class="testimonial swiper-slide">
                             <!--blockquote é usado geralmente quando se quer botar um comentário de outrem, nao exatamente voce, e sim um depoimento.-->
                             <blockquote>
                                 <p>
@@ -158,22 +155,18 @@ href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
                                     Desde quando comecei a frequentar a barbershop, foi nítido a mudança do meu visual,
                                     e claro, de forma muito positiva, restaurou minha alto estima e preservou a saúde do
                                     meu cabelo!
-
                                 </p>
-                                <br>
                                 <!--cite é usado para fazer uma citação, um comentário de outrem-->
-                                <!--VIDEO PAUSADO EM 16 MINUTOS-->
                                 <cite>
                                     <img src="assets/photogithub.jpg"
                                     alt="foto de Adriel Costa"
                                     />
                                     Adriel Costa
                                 </cite>
-                                <br>
                             </blockquote>
                         </div>
 
-                        <div class="testimonials swiper-slide">
+                        <div class="testimonial swiper-slide">
                             <!--blockquote é usado geralmente quando se quer botar um comentário de outrem, nao exatamente voce, e sim um depoimento.-->
                             <blockquote>
                                 <p>
@@ -185,27 +178,25 @@ href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
                                 </p>
                                 <!--cite é usado para fazer uma citação, um comentário de outrem-->
                                 <cite>
-                                    <img src="https://randomuser.me/api/portraits/men/22.jpg"
+                                    <img src="assets/fonts/WhatsApp Image 2022-04-29 at 19.12.35bru.jpeg"
                                         alt="foto de Bruno Ribeiro" />
                                     Bruno Ribeiro
                                 </cite>
                             </blockquote>
                         </div>
 
-                        <div class="testimonials swiper-slide">
+                        <div class="testimonial swiper-slide">
                             <!--blockquote é usado geralmente quando se quer botar um comentário de outrem, nao exatamente voce, e sim um depoimento.-->
                             <blockquote>
                                 <p>
-
                                     <span>&ldquo;</span>
                                     Se você for homem, e preza pela saúde e estilo do seu cabelo e da sua barba, não
                                     percam tempo! Desde quando conheci a barbershop, não troco por nada, nota 10!
-
                                 </p>
 
                                 <!--cite é usado para fazer uma citação, um comentário de outrem-->
                                 <cite>
-                                    <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                                    <img src="assets/fonts/WhatsApp Image 2022-04-29 at 18.11.43.jpeg"
                                         alt="foto de Matheus Melgaço" />
                                     Matheus Melgaço
                                 </cite>
@@ -214,7 +205,7 @@ href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
                     </div>
 
                     <!-- If we need pagination -->
-                    <div class=" "></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -229,7 +220,7 @@ href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
                 <p>
                     Entre em contato com a Barbershop, queremos tirar suas dúvidas, ouvir suas críticas e sugestões
                 </p>
-                <a href=" https://api.whatsapp.com/send?phone=+5585999717556text=Olá! Agende já seu horário!"
+                <a href="https://api.whatsapp.com/send?phone=+5585997647972text=Olá! Agende já seu horário!"
                 class="button"
                 target="_blank"
             ><i class="icon-whatsapp"></i> Entrar em contato</a>
@@ -239,12 +230,36 @@ href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
                 <ul class="grid">
                     <li><i class="icon-phone"></i> 85 99420-0669</li>
                     <li><i class="icon-map-pin"></i>Rua da Felicidade, 420</li>
-                    <li><i class="icon-mail"></i>contanto@barbershop.com</li>
+                    <li><i class="icon-mail"></i>contato@barbershop.com</li>
                 </ul>
             </div>
             </div>
         </section>
+
+
+        <div class="divider-1"></div>
     </main>
+
+    <!--Footer/rodapé-->
+    <footer class="section">
+        <div class="container grid">
+        <div class="brand">
+            <a class="logo logo-alt" href="#home">barber<span>shop</span>.</a>
+            <p>2022 Barbershop.</p>
+            <p>Todos os direitos reservados.</p>
+            </div>
+
+        <div class="social">
+        <a href="https://instagram.com" target="_blank">
+            <i class="icon-instagram"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="icon-youtube"></i></a> 
+        </div>
+    </div>
+    </footer>
+
+    <a href="#home"><i class="icon-arrow-up"></i></a>
 
     <!--Swiper-->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

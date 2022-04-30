@@ -159,6 +159,10 @@ main{
     color: var(--base-color);
 }
 
+.logo-alt span {
+    color: var(--body-color);
+}
+
 /********* NAVIGATION *********/
 
 nav {
@@ -375,9 +379,8 @@ nav.show div.icon-close{
     color: var(--base-color);
 }
 
-.card .tittle{
+.card .title{
     font-size: 1.5rem;
-    color: black;
     margin-bottom: 0.75rem;
 }
 
@@ -389,7 +392,6 @@ nav.show div.icon-close{
     margin-left: 0;
     margin-right: 0;
 }
-
 
 #testimonials header {
     margin-left: 1.5rem;
@@ -412,7 +414,6 @@ nav.show div.icon-close{
 
 #testimonials blockquote p span {
     font: 700 2.5rem serif;
-
     position: absolute;
     top: -0.375rem;
     left: -1.875rem;
@@ -423,7 +424,7 @@ nav.show div.icon-close{
 #testimonials cite{
     display: flex;
     align-items: center;
-    font-style: italic;
+    font-style: normal;
 }
 
 #testimonials cite img {
@@ -474,4 +475,28 @@ nav.show div.icon-close{
 
 #contact ul li i{
     color: var(--base-color);
+}
+
+/*======== FOOTER ====== */ 
+footer {
+    background: var(--base-color);
+}
+
+footer .logo {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+    color: var(--text-color-light);
+    margin-bottom: 0.75rem;
+}
+
+footer i {
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+}
+
+footer .social a {
+    margin-right: 2rem;
 }
