@@ -28,12 +28,11 @@ function changeHeaderWhenScroll(){
     } else {
         // menor que a altura do header
         header.classList.remove('scroll')
+
     }
 }
 
-window.addEventListener('scroll', function () {
-    
-})
+
 
 /* Testimonials carousel slider swiper(carrosel de rolar os depoimentos)*/
 const swiper = new Swiper('.swiper-container', {
@@ -66,11 +65,18 @@ scrollReveal.reveal(
 
 
 /* Botao voltar para o topo */
+function backToTop(){
 const backToTopButton = document.querySelector('.back-to-top')
-window.addEventListener('scroll', function() {
+
     if(window.scrollY >= 560){
         backToTopButton.classList.add('show')
     } else {
         backToTopButton.classList.remove('show')
     }
+}
+
+/*When Scroll */
+window.addEventListener('scroll', function () {
+    changeHeaderWhenScroll()
+    backToTop()
 })
